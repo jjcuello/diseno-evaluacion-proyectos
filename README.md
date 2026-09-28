@@ -41,6 +41,7 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
   2. Diseñar la arquitectura de la plataforma: stacks soportados, aislamiento por contenedores, límites de recursos, flujo de despliegue.
   3. Evaluar la viabilidad mediante un piloto con 2–3 materias, midiendo adopción, ahorro frente a servicios externos e incidentes de seguridad.
 - **Alcance recomendado (para que sea viable en el tiempo del curso):** acotar a un set fijo de stacks (Node, Python, sitios estáticos), sin intentar replicar la totalidad de funcionalidades de un PaaS comercial. El mayor riesgo técnico es la ejecución de código de terceros (sandboxing, aislamiento, cuotas), que debe tratarse como el núcleo del capítulo de diseño.
+- **Métrica de viabilidad (costo-beneficio):** no se mide en ventas, sino comparando el costo de mantener la infraestructura en la universidad frente al costo de que alumnos/profesores paguen servicios externos, más el tiempo perdido en configuraciones manuales de despliegue.
 - **Base técnica de partida:** ninguna existente; sería desarrollo nuevo, apoyado en la experiencia de despliegue/orquestación de servidores ya adquirida.
 
 ### 2. Software base de gestión administrativa para instituciones educativas
@@ -54,7 +55,8 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
   2. Diseñar un modelo de datos y una arquitectura genérica y configurable (multi-institución), separando lo específico de un caso particular de lo reutilizable.
   3. Evaluar el sistema mediante un caso de estudio simulado o anonimizado, midiendo reducción de errores de imputación y tiempo administrativo.
 - **Nota importante de alcance:** este candidato se apoya en la base ya construida y probada en producción (APP-FANA), pero **se presenta ante la universidad como un software base genérico**, sin exponer datos, nombre ni detalles operativos de la institución real que lo usa hoy (es una fuente de ingreso activa, no un proyecto académico). El trabajo de grado documentaría el diseño generalizado del sistema, no el caso de uso específico.
-- **Base técnica de partida:** la más madura de las tres — sistema en producción con módulos de inscripciones, facturación "por consumo", nómina y auditoría ya resueltos y validados con datos reales.
+- **Métrica de viabilidad (eficiencia operativa):** horas-hombre ahorradas y reducción de costos por errores contables/de imputación, comparando el proceso manual (o con hojas de cálculo) contra el sistema.
+- **Base técnica de partida:** la más madura de las tres — sistema en producción con módulos de inscripciones, facturación "por consumo", nómina y auditoría ya resueltos y validados con datos reales. Esto reduce el riesgo técnico casi a cero y permite concentrar el esfuerzo del curso en la parte metodológica y documental (formato del Politécnico Santiago Mariño).
 
 ### 3. Sistema de gestión y evaluación financiera de carteras de préstamos y fondos de inversión
 
@@ -66,8 +68,8 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
   1. Diagnosticar los riesgos operativos y contables de la gestión manual de préstamos y fondos (sobreconteos, duplicados, reconstrucciones erróneas).
   2. Diseñar un modelo transaccional con controles de acceso por rol y bitácora de auditoría para las operaciones críticas.
   3. Evaluar el sistema mediante indicadores de rentabilidad mensual/acumulada y un simulador de proyecciones para inversionistas.
-- **Ventaja particular:** es el candidato más alineado temáticamente con la bibliografía del curso (Sapag Chain trata directamente evaluación financiera de proyectos: flujo de caja, rentabilidad, factibilidad económica), lo que facilita conectar la teoría del libro con el caso práctico.
-- **Nota de confidencialidad (igual que el candidato 2):** es un negocio secundario real (gestión de fondos/inversionistas propios), por lo que se presenta ante la universidad de la misma forma — como software base genérico, sin exponer cifras, identidad de fondos ni clientes reales. El trabajo de grado documenta el diseño del sistema, no el caso de uso específico.
+- **Ventaja particular:** es el candidato más alineado temáticamente con la bibliografía del curso (Sapag Chain trata directamente evaluación financiera de proyectos: flujo de caja, rentabilidad, VAN, TIR, factibilidad económica). El software mismo es una herramienta de evaluación financiera, así que la tesis "habla el mismo idioma" que la materia durante todo el semestre — es la más fácil de justificar económicamente.
+- **Nota de confidencialidad (igual que el candidato 2):** es un negocio secundario real (gestión de fondos/inversionistas propios), por lo que se presenta ante la universidad de la misma forma — como software base genérico, sin exponer cifras, identidad de fondos ni clientes reales. Los objetivos deben enfocarse en el diseño del sistema transaccional y la seguridad de la auditoría, no en los datos del negocio que lo respalda.
 - **Base técnica de partida:** plataforma en producción (Next.js + Supabase) con módulos de préstamos, fondos, rentabilidad, auditoría e inteligencia de negocio ya funcionando.
 
 ---
@@ -79,6 +81,11 @@ Orden de preferencia sugerido, sujeto a tu decisión:
 1. **Plataforma de alojamiento (PaaS institucional)** — la más original y con mayor "peso" de diseño desde cero, pero también la de mayor riesgo de alcance. Requiere acotar bien el MVP desde el primer corte.
 2. **Software base de gestión administrativa** — la de menor riesgo de ejecución (ya funciona en producción), buen encaje con el marco Diagnosticar/Diseñar/Evaluar si se generaliza correctamente y se cuida la confidencialidad del caso real.
 3. **Sistema financiero de préstamos/fondos** — la más alineada con la bibliografía del curso, buena opción de respaldo si la plataforma PaaS resulta demasiado ambiciosa para el cronograma.
+
+**Heurístico rápido para defender una sola opción ante la profesora, si lo pide:**
+
+- Si el objetivo es el proyecto que mejor conecta con el temario (Sapag Chain) y facilita los estudios de rentabilidad durante todo el semestre → **Opción 3**.
+- Si el objetivo es el proyecto más retador técnicamente y con mayor legado institucional (a los jurados suele gustarles que resuelva un problema de la propia casa de estudios) → **Opción 1**.
 
 ## Pendientes
 
