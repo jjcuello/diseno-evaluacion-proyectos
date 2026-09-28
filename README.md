@@ -38,9 +38,9 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
 - **Pregunta de investigación:** ¿en qué medida es factible, técnica y económicamente, diseñar una plataforma de alojamiento institucional que permita a estudiantes y profesores desplegar proyectos académicos sin depender de servicios externos de pago?
 - **Objetivo general:** diseñar y evaluar la factibilidad técnica y económica de una plataforma tipo Render alojada en la infraestructura de la universidad, que permita a estudiantes y docentes desplegar proyectos de curso mediante un flujo simple (ej. git push).
 - **Objetivos específicos (Diagnosticar / Diseñar / Evaluar):**
-  1. Diagnosticar las necesidades de alojamiento de proyectos académicos en la comunidad universitaria (encuestas a estudiantes/profesores).
-  2. Diseñar la arquitectura de la plataforma: stacks soportados, aislamiento por contenedores, límites de recursos, flujo de despliegue.
-  3. Evaluar la viabilidad mediante un piloto con 2–3 materias, midiendo adopción, ahorro frente a servicios externos e incidentes de seguridad.
+    1. Diagnosticar las necesidades de alojamiento de proyectos académicos en la comunidad universitaria (encuestas a estudiantes/profesores).
+    2. Diseñar la arquitectura de la plataforma: stacks soportados, aislamiento por contenedores, límites de recursos, flujo de despliegue.
+    3. Evaluar la viabilidad mediante un piloto con 2–3 materias, midiendo adopción, ahorro frente a servicios externos e incidentes de seguridad.
 - **Alcance:** soporte a un set fijo de stacks (Node, Python, sitios estáticos), despliegue vía git push, aislamiento por contenedor, límites de recursos básicos, piloto con 2–3 materias durante un período académico.
 - **Fuera de alcance:** bases de datos gestionadas complejas, facturación multiusuario, alta disponibilidad/escalado multiservidor, integraciones con CI/CD externas, soporte a stacks fuera del set definido.
 - **Indicadores de evaluación:** % de reducción de costo frente a servicios externos, tiempo promedio de despliegue vs. proceso manual, número de proyectos alojados durante el piloto, incidentes de seguridad registrados, satisfacción de usuarios (encuesta post-piloto).
@@ -56,9 +56,9 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
 - **Pregunta de investigación:** ¿es posible diseñar un modelo de software base, genérico y configurable, que resuelva los procesos de inscripción, facturación y nómina comunes a instituciones educativas privadas de pequeña/mediana escala, y evaluar su eficiencia frente a la gestión manual?
 - **Objetivo general:** diseñar y evaluar un sistema base (no atado a una institución específica) que resuelva de forma genérica y configurable los procesos de inscripción, facturación por consumo y nómina de una institución educativa tipo.
 - **Objetivos específicos:**
-  1. Diagnosticar los procesos administrativos comunes a instituciones educativas de escala similar (inscripciones, facturación, nómina).
-  2. Diseñar un modelo de datos y una arquitectura genérica y configurable (multi-institución), separando lo específico de un caso particular de lo reutilizable.
-  3. Evaluar el sistema mediante un caso de estudio simulado o anonimizado, midiendo reducción de errores de imputación y tiempo administrativo.
+    1. Diagnosticar los procesos administrativos comunes a instituciones educativas de escala similar (inscripciones, facturación, nómina).
+    2. Diseñar un modelo de datos y una arquitectura genérica y configurable (multi-institución), separando lo específico de un caso particular de lo reutilizable.
+    3. Evaluar el sistema mediante un caso de estudio simulado o anonimizado, midiendo reducción de errores de imputación y tiempo administrativo.
 - **Alcance:** modelo de datos multi-institución; módulos de inscripción, facturación por consumo, nómina y auditoría; validación con caso de estudio simulado o anonimizado.
 - **Fuera de alcance:** integración con sistemas contables externos de terceros, módulos académicos (notas, asistencia) si no existen ya en la base, soporte multi-idioma, despliegue como SaaS público para múltiples clientes reales.
 - **Indicadores de evaluación:** horas-hombre ahorradas, % de reducción de errores de imputación, tiempo de cierre administrativo mensual, cobertura de auditoría (eventos registrados vs. eventos críticos totales).
@@ -74,9 +74,9 @@ Se requiere presentar tres candidatos a Proyecto de Grado. Cada título fue form
 - **Pregunta de investigación:** ¿cómo diseñar un sistema transaccional con controles de auditoría que garantice trazabilidad e integridad en la gestión de carteras de préstamos y fondos de inversión de pequeña escala, y cómo evaluar su aporte a la rentabilidad y a la reducción del riesgo operativo?
 - **Objetivo general:** diseñar y evaluar un sistema que permita administrar carteras de préstamos y fondos de inversión con integridad transaccional, trazabilidad de auditoría y proyecciones de rentabilidad.
 - **Objetivos específicos:**
-  1. Diagnosticar los riesgos operativos y contables de la gestión manual de préstamos y fondos (sobreconteos, duplicados, reconstrucciones erróneas).
-  2. Diseñar un modelo transaccional con controles de acceso por rol y bitácora de auditoría para las operaciones críticas.
-  3. Evaluar el sistema mediante indicadores de rentabilidad mensual/acumulada y un simulador de proyecciones para inversionistas.
+    1. Diagnosticar los riesgos operativos y contables de la gestión manual de préstamos y fondos (sobreconteos, duplicados, reconstrucciones erróneas).
+    2. Diseñar un modelo transaccional con controles de acceso por rol y bitácora de auditoría para las operaciones críticas.
+    3. Evaluar el sistema mediante indicadores de rentabilidad mensual/acumulada y un simulador de proyecciones para inversionistas.
 - **Alcance:** modelo transaccional (alta, cobro, avances, amortización, cierre), control de acceso por rol, bitácora de auditoría, indicadores de rentabilidad mensual/acumulada, simulador de proyecciones.
 - **Fuera de alcance:** integración con banca real o pasarelas de pago, cumplimiento regulatorio formal ante entes de supervisión financiera, gestión de múltiples monedas/inflación, aplicación móvil completa.
 - **Indicadores de evaluación:** % de reducción de errores de reconstrucción histórica, tiempo de cierre mensual, cobertura de auditoría, precisión de las proyecciones del simulador frente a resultados reales.
