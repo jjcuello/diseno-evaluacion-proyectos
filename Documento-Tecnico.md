@@ -37,7 +37,7 @@
 - **Instrumentos:**
     - Cuestionario a estudiantes (escala Likert y preguntas cerradas sobre servicios usados, gasto, pérdida de proyectos y tiempo invertido en desplegar).
     - Cuestionario o entrevista a docentes (cómo reciben y revisan los proyectos desplegados).
-    - Entrevista semiestructurada al departamento de tecnología (red, IP pública, DNS, energía, espacio físico y políticas de uso).
+    - Entrevista semiestructurada al departamento de tecnología (red, IP pública, DNS, energía, espacio físico y políticas de uso). Incluye una pregunta sobre **qué distribuciones de Linux administra el departamento y con cuáles tiene experiencia**, en particular la familia Red Hat (AlmaLinux, Rocky Linux) frente a la familia Debian (Debian, Ubuntu). La respuesta pesa en la elección final del sistema operativo, porque la factibilidad operativa depende de quién mantendrá la plataforma.
     - Ficha de observación de la infraestructura disponible.
 - **Validez y confiabilidad:** validación de los instrumentos por juicio de tres expertos, prueba previa del cuestionario y cálculo del coeficiente Alfa de Cronbach.
 - **Evaluación según Sapag Chain:**
@@ -55,11 +55,22 @@ Los tres nodos se instalan en las instalaciones del Politécnico (laboratorio o 
 | Nodos 2 y 3: agentes k3s | Equipos HP 2 y 3 | Aplicaciones de los estudiantes y trabajos de compilación |
 | Red | Switch Gigabit, cable Cat6 | IPs estáticas en un segmento aislado de la red administrativa; administración por SSH con autenticación por llave (sin contraseña), solo desde equipos autorizados |
 | Energía | UPS | Respaldo eléctrico para los tres nodos y el switch. Es respaldo eléctrico, **no alta disponibilidad**: el nodo 1 es un punto único de falla y se documenta como limitación |
-| Sistema operativo | Los tres nodos | Ubuntu Server LTS vigente o Debian estable, sin interfaz gráfica |
+| Sistema operativo | Los tres nodos | AlmaLinux 9 o Rocky Linux 9 (familia Red Hat), instalación mínima sin interfaz gráfica y con SELinux activo. Se confirma en el diagnóstico (ver abajo) |
 
 ![Topología física](diagramas/topologia.svg)
 
 *Figura 2. Topología física. Los tres nodos están en un segmento aislado de la red del Politécnico. El tráfico HTTPS (en color) entra por el borde de red hasta Traefik en el nodo 1, que lo reparte a las apps de los nodos 2 y 3 a través del switch.*
+
+**Sistema operativo de los nodos**
+
+- **Elección: AlmaLinux 9 o Rocky Linux 9.** Las dos son distribuciones compatibles con Red Hat Enterprise Linux y reciben actualizaciones de seguridad hasta el 31 de mayo de 2032. Con eso, la plataforma no necesita actualizaciones de versión mayor del sistema durante la investigación ni durante varios períodos académicos posteriores.
+- **Por qué no Fedora:** comparte las mismas herramientas (dnf, SELinux, firewalld), pero cada versión recibe actualizaciones solo unos 13 meses. Obligaría a actualizar la versión mayor de los tres nodos aproximadamente una vez al año, con el clúster en producción.
+- **Por qué no Ubuntu o Debian:** son igualmente válidas para k3s. Se prefiere la familia Red Hat por el dominio del autor y por SELinux, que añade una capa de aislamiento obligatorio entre los contenedores y el sistema anfitrión.
+- **Decisión final:** depende de la entrevista al departamento de tecnología. Si este administra otra familia de distribuciones, se adopta esa, porque es quien mantendrá la plataforma. Se documenta en la fase de alternativas de solución, con criterios explícitos: ciclo de soporte, compatibilidad con k3s, seguridad y dominio del equipo administrador.
+- **Preparación para k3s en la familia Red Hat** (según la documentación oficial de k3s):
+    - **firewalld:** desactivarlo o abrir el puerto 6443/tcp y declarar como zona de confianza las redes de pods (10.42.0.0/16) y de servicios (10.43.0.0/16). Se prefiere mantenerlo activo con esas reglas, en coherencia con el modelo de seguridad.
+    - **SELinux:** instalar el paquete `k3s-selinux` y ejecutar k3s con soporte de SELinux (`--selinux`), sin desactivarlo.
+    - **Verificar al implementar** los requisitos de la versión de k3s vigente en ese momento.
 
 **Exposición a internet y dominio (`*.paas.psm.edu.ve`)**
 
@@ -97,6 +108,7 @@ La plataforma ejecuta código de terceros, así que este es el mayor riesgo téc
 - **Un namespace por usuario**, con *ResourceQuota* y *LimitRange* para que nadie consuma más de su cuota.
 - **NetworkPolicy que niega todo el tráfico por defecto:** una app no puede comunicarse con las de otros usuarios, ni con la red interna del Politécnico, ni con el plano de control. Solo se permite la salida a internet por los puertos necesarios. k3s trae un controlador de NetworkPolicy integrado.
 - **Pod Security Admission en nivel `restricted`:** los contenedores corren sin root, sin modo privilegiado, sin acceso al disco del nodo y sin capacidades extra del kernel.
+- **SELinux en modo obligatorio (*enforcing*) en los nodos:** aunque un contenedor lograra escapar de su aislamiento, la política de SELinux limita lo que puede hacer sobre el sistema anfitrión.
 - **Sin credenciales del clúster dentro de las apps:** `automountServiceAccountToken: false`.
 - **Límites de uso:** número máximo de apps y de despliegues por usuario, y límite de peticiones a la API.
 - **Escaneo de imágenes con Trivy** (opcional, si el cronograma lo permite).

@@ -95,6 +95,7 @@ Los datos de la portada (autor, tutor, docente, fecha) están en el diccionario 
 - [ ] Solicitar al departamento de tecnología del Politécnico: espacio físico para los 3 equipos, segmento de red, IP pública (o permiso para Cloudflare Tunnel), delegación del subdominio `paas.psm.edu.ve` y proveedor de identidad (Google Workspace, Microsoft 365 o correo institucional).
 - [ ] Confirmar el dominio institucional real (`psm.edu.ve` viene de la hoja de ruta y no está verificado).
 - [ ] Definir si los 3 equipos HP los aporta el autor o el Politécnico (cambia el estudio económico) y relevar sus especificaciones (CPU, RAM, disco) para calcular la capacidad del piloto.
+- [x] Sistema operativo de los nodos: AlmaLinux 9 o Rocky Linux 9 (familia Red Hat), sujeto a lo que administre el departamento de tecnología (pregunta incluida en la entrevista).
 - [ ] Verificar el estado de las herramientas antes de implementar (Kaniko archivado, versiones de Traefik incluidas en k3s, Paketo, BuildKit rootless).
 - [ ] Redactar el borrador del reglamento de uso aceptable para aprobación del Politécnico.
 - [ ] Iniciar el diagnóstico (encuesta a estudiantes y docentes sobre necesidades de alojamiento).

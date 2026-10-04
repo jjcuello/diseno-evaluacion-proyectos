@@ -181,6 +181,28 @@ Hay señales típicas de referencias inventadas por una IA:
 
 ---
 
+## Documentación técnica (documento técnico; capítulo II, bases teóricas)
+
+### DT1. Requisitos de instalación de k3s ✅
+
+- **Referencia:** K3s Project (s.f.). *Requirements* [Documento en línea]. Disponible: https://docs.k3s.io/installation/requirements [Consulta: 2026, octubre 4].
+- **Datos verificados:**
+  - k3s "is expected to work on most modern Linux systems"; la página no lista sistemas operativos probados.
+  - Para Red Hat Enterprise Linux, CentOS y Fedora recomienda desactivar firewalld o, si se mantiene, abrir el puerto 6443/tcp y declarar como zona de confianza 10.42.0.0/16 (pods) y 10.43.0.0/16 (servicios).
+  - Para RHEL 10 exige instalar `kernel-modules-extra`.
+- **Uso:** justificación del sistema operativo de los nodos y su preparación.
+
+### DT2. Ciclo de vida de Rocky Linux y AlmaLinux 9 ✅
+
+- **Referencia:** Rocky Enterprise Software Foundation (s.f.). *Rocky Linux release and version guide* [Documento en línea]. Disponible: https://wiki.rockylinux.org/rocky/version [Consulta: 2026, octubre 4].
+- **Dato:** Rocky Linux 9 tiene fin de vida el 31 de mayo de 2032. Según búsqueda, AlmaLinux 9 recibe actualizaciones de seguridad hasta la misma fecha; 🟡 falta confirmarlo en la página oficial de AlmaLinux.
+
+### DT3. Ciclo de vida de Fedora 🟡
+
+- Cada versión recibe mantenimiento unos 13 meses, con una versión nueva aproximadamente cada seis meses. El dato proviene de fuentes secundarias (SSD Nodes, itechtics). Si se cita, conviene usar la página oficial del proyecto Fedora (docs.fedoraproject.org, "Fedora Release Life Cycle"), todavía sin consultar.
+
+---
+
 ## Bibliografía del curso
 
 ### B1. Sapag Chain y Sapag Chain (2000), capítulo 1 ✅ leído en el original
