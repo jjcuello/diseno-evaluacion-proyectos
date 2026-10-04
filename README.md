@@ -53,6 +53,21 @@ El trabajo cuenta con dos tutores, y por eso se desarrolla en dos documentos:
 
 Las normas del Manual (5ª ed.) y del Reglamento de Trabajo de Grado (2025) están resumidas como *skills* para agentes en [.claude/skills/](.claude/skills/); el punto de entrada es [AGENTS.md](AGENTS.md).
 
+## Generar los documentos
+
+```
+python generar_documentos.py
+```
+
+Produce:
+
+- `entregas/Propuesta-Trabajo-de-Grado.pdf` y `.docx`: **la entrega para la tutora**, con el formato del Manual (portada según el anexo C-1, índice, carta, márgenes de 4 y 3 cm, Arial 12, interlineado 1,5, preliminares en romanos y cuerpo desde la página 1). Se arma desde el capítulo I de `Documento-Metodologico.md` y omite los capítulos que siguen pendientes. Los marcadores `[PENDIENTE…]` salen resaltados en amarillo.
+- `Documento-Tecnico.pdf` y `Documento-Metodologico.pdf`: copias de trabajo completas, sin el formato del Manual.
+
+Los datos de la portada (autor, tutor, docente, fecha) están en el diccionario `PORTADA` de `generar_documentos.py`.
+
+**Requisitos (Windows):** `pip install markdown weasyprint python-docx`, [Pandoc](https://pandoc.org) y Pango de MSYS2 (`winget install MSYS2.MSYS2` y luego `pacman -S mingw-w64-x86_64-pango` en la consola de MSYS2). El script encuentra Pango por su cuenta en `C:\msys64\mingw64\bin`. La plantilla de Word se regenera con `python plantillas/crear_referencia_docx.py`.
+
 ## Pendientes
 
 - [ ] Leer Capítulo 1 de Sapag Chain antes de la próxima clase.
