@@ -1,8 +1,8 @@
-"""Genera los diagramas, el PDF imprimible y la página HTML publicable a partir del README.
+"""Genera los diagramas, los PDF imprimibles y la página HTML publicable a partir de los documentos.
 
 Uso:
-    python3 generar_documentos.py                 # diagramas SVG + PDF
-    python3 generar_documentos.py pagina.html     # además, la página HTML en esa ruta
+    python3 generar_documentos.py                 # diagramas SVG + un PDF por documento
+    python3 generar_documentos.py pagina.html     # además, la página HTML del documento técnico en esa ruta
 """
 import re
 import sys
@@ -16,6 +16,7 @@ import generar as diagramas  # noqa: E402
 
 RAIZ = Path(__file__).parent
 EXTENSIONES = ['tables', 'fenced_code', 'sane_lists', 'toc']
+DOCUMENTOS = ['Documento-Tecnico', 'Documento-Metodologico']
 
 CSS_PDF = """@page{size:Letter;margin:2cm}
 body{font-family:'DejaVu Sans',sans-serif;font-size:10pt;line-height:1.45;color:#222}
@@ -40,11 +41,11 @@ DARK = dict(fg='#dde6e8', muted='#9aabb1', line='#7f9299', surface='#1d282b', bg
             oe1='#e0a948', oe2='#4fb3c2', oe3='#a58ce6')
 
 
-def generar_pdf(md):
+def generar_pdf(md, nombre):
     cuerpo = markdown.markdown(md, extensions=EXTENSIONES)
     html = (f'<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{CSS_PDF}</style>'
             f'</head><body>{cuerpo}</body></html>')
-    weasyprint.HTML(string=html, base_url=str(RAIZ)).write_pdf(RAIZ / 'Propuestas-Proyecto-de-Grado.pdf')
+    weasyprint.HTML(string=html, base_url=str(RAIZ)).write_pdf(RAIZ / f'{nombre}.pdf')
 
 
 def generar_pagina(md, destino):
@@ -75,7 +76,7 @@ def generar_pagina(md, destino):
 if __name__ == '__main__':
     for nombre, svg in diagramas.generar().items():
         (RAIZ / 'diagramas' / f'{nombre}.svg').write_text(svg, encoding='utf-8')
-    md = (RAIZ / 'README.md').read_text(encoding='utf-8')
-    generar_pdf(md)
+    for nombre in DOCUMENTOS:
+        generar_pdf((RAIZ / f'{nombre}.md').read_text(encoding='utf-8'), nombre)
     if len(sys.argv) > 1:
-        generar_pagina(md, sys.argv[1])
+        generar_pagina((RAIZ / 'Documento-Tecnico.md').read_text(encoding='utf-8'), sys.argv[1])
