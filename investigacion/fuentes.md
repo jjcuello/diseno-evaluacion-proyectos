@@ -140,6 +140,33 @@ La búsqueda en la web no arrojó trabajos de grado venezolanos de 2023 en adela
 - Consultar la biblioteca y la Coordinación de Trabajo de Grado del propio I.U.P.S.M. (la Coordinación lleva el registro de los trabajos aprobados, según el art. 17 del Reglamento).
 - Buscar directamente en los repositorios de la UCAB, la USB, la UCV (Saber UCV), la UNET, la URBE, la ULA y la UNEXPO.
 
+### V6. Cinco "tesis venezolanas" que trajo Gemini ❌ no verificables: tratarlas como inventadas
+
+Gemini listó cinco trabajos con título, autor y año, pero **ninguno con enlace**, y dio una excusa distinta para cada uno ("requiere sesión", "sin URL estática", etc.). Se buscó cada título exacto, entre comillas, el 2026-10-04, y **ninguno aparece en la web**:
+
+| Título según Gemini | Autor según Gemini | Universidad | Resultado |
+|---|---|---|---|
+| Diseño e implementación de una infraestructura en la nube para la gestión y despliegue de servicios informáticos educativos | Carlos Eduardo Mendoza (2021) | UCV | Sin coincidencias |
+| Plataforma de orquestación de contenedores basada en Docker y Kubernetes para el despliegue automatizado de aplicaciones web | Gabriel Alejandro Rodríguez (2022) | UCAB | Sin coincidencias |
+| Propuesta de migración de servidores institucionales a plataformas de virtualización y microservicios… | José Luis Morales Santander (2022) | URBE | Sin coincidencias |
+| Automatización del despliegue de infraestructura y aplicaciones web mediante Docker en entornos académicos y de laboratorio | Andrea Valentina Colmenares (2023) | USB | Sin coincidencias |
+| Evaluación de desempeño en la virtualización de servidores e implementación de servicios institucionales para estudiantes… | Ricardo José Fernández (2023) | ULA | Sin coincidencias |
+
+Hay señales típicas de referencias inventadas por una IA:
+
+- Los títulos son demasiado ajustados al tema pedido.
+- Los nombres de los autores son genéricos.
+- No hay ningún enlace verificable.
+- La falta de enlace se justifica de forma distinta en cada caso.
+
+**Decisión:** **no citar ninguna**. Citar una tesis inexistente es fraude científico por "citas bibliográficas erróneas" (Reglamento 2025, art. 96). Solo se reconsiderarán si el usuario encuentra el documento en el repositorio de la universidad.
+
+### V7. Hallazgos reales de la verificación
+
+- **Saber UCV:** Medina, F. (2015). *Diseño e implementación de una estrategia basada en las mejores prácticas para la virtualización de servidores de una organización*. Trabajo de pregrado, Universidad Central de Venezuela. Disponible: https://saber.ucv.ve/jspui/handle/10872/9344 [Consulta: 2026, octubre 4].
+  - ✅ El trabajo existe, pero es de 2015: **queda fuera del límite de antecedentes**. Como mucho, sirve como referencia histórica de la virtualización en Venezuela.
+- **Universidad de las Ciencias Informáticas (Cuba), 2024:** hay un trabajo de diploma sobre la automatización del despliegue con Docker en el repositorio de la UCI (https://repositorio.uci.cu/handle/123456789/10898). 🟡 El repositorio bloqueó la descarga y faltan el título, el autor y el contenido. Si se confirma, serviría como antecedente latinoamericano de 2024.
+
 ---
 
 ## Bases teóricas (capítulo II)

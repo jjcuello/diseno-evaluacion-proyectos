@@ -63,6 +63,7 @@ Las normas del Manual (5ª ed.) y del Reglamento de Trabajo de Grado (2025) est�
 - [x] Nivel meso: Nube UNAM y pagos PSE verificados (con correcciones a Gemini).
 - [x] Antecedentes: 3 válidos y 1 complementario (Ecuador, 2022–2024) en [investigacion/fuentes.md](investigacion/fuentes.md).
 - [x] Nivel micro: conectividad y electricidad (Freedom House 2024), universidades (ODHULA 2023) y límites de pago (Bancamiga 2024) verificados. Se descartó lo de la OFAC y el SWIFT que trajo Gemini.
+- [ ] ⚠️ Las 5 "tesis venezolanas" que trajo Gemini no existen en la web: no citarlas (ver V6 en investigacion/fuentes.md).
 - [ ] Antecedentes venezolanos de 2023 en adelante: consultar la Coordinación de Trabajo de Grado y la biblioteca del I.U.P.S.M., y los repositorios de la UCAB, la USB, la UCV, la UNET, la URBE, la ULA y la UNEXPO.
 - [ ] Documento técnico: tratar el **racionamiento eléctrico** como riesgo explícito del clúster (autonomía del UPS, apagado ordenado, arranque automático, disponibilidad medida en el piloto).
 - [ ] Buscar una fuente que demuestre la barrera de pago internacional en la región (pista: Global Findex del Banco Mundial).
