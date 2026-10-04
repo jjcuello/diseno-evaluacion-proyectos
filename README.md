@@ -72,7 +72,9 @@ Las normas del Manual (5ª ed.) y del Reglamento de Trabajo de Grado (2025) est�
 - [ ] Solicitar el aval escrito del Politécnico para realizar la investigación en sus instalaciones (Reglamento, art. 45).
 - [ ] Al inscribir Proyecto de Investigación, ajustar el cronograma de 18 semanas al calendario del Reglamento (por ahora el trabajo se adelanta sin la materia inscrita).
 - [ ] Incorporar al repositorio (carpeta `referencias/`) los PDF del Manual, el Reglamento y el esquema por naturaleza.
-- [ ] Confirmar con el docente el verbo del objetivo general (propuesto: *Desarrollar*; alternativa: *Proponer* si el proyecto se limita a diseño y factibilidad, sin construir la plataforma).
+- [x] Verbo del objetivo general: **Diseñar** (decisión del autor; falta el visto bueno de la tutora).
+- [x] Objetivos ajustados: OE2 «Definir la arquitectura…» y OE3 «Evaluar la factibilidad técnica, operativa y económica…», sin piloto (el piloto pasa a recomendaciones).
+- [ ] Realinear el cronograma, el alcance y los indicadores del documento técnico al nuevo alcance (sin piloto; con prueba de concepto en laboratorio).
 - [ ] Respaldar con fuentes citables los contextos macro, meso y micro (estadísticas, normativas, datos del Politécnico).
 - [ ] Reescribir el estudio del problema de [Documento-Tecnico.md](Documento-Tecnico.md) con la nueva escala (macro mundial, meso Latinoamérica, micro Venezuela y el Politécnico).
 - [ ] Solicitar al departamento de tecnología del Politécnico: espacio físico para los 3 equipos, segmento de red, IP pública (o permiso para Cloudflare Tunnel), delegación del subdominio `paas.psm.edu.ve` y proveedor de identidad (Google Workspace, Microsoft 365 o correo institucional).

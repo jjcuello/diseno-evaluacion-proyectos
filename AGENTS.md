@@ -29,6 +29,7 @@ Están en `.claude/skills/<nombre>/SKILL.md`. Claude Code los carga automáticam
 - **Calendario:** la materia todavía no está inscrita; el trabajo se adelanta. No ajustar fechas al Reglamento hasta que el usuario lo indique.
 - **Referencias:** los PDF originales (Manual, Reglamento, esquema por naturaleza, líneas de investigación) van en `referencias/`. Si existen, consúltalos para verificar lo que resumen los skills.
 - **Modalidad (propuesta):** **Proyecto Factible**, apoyado en una investigación de campo y documental. La alternativa es Investigación Tecnológica. Está por confirmar con el tutor metodológico.
+- **Objetivos vigentes:** general «Diseñar una plataforma web institucional de alojamiento y despliegue continuo (PaaS) para el Politécnico Santiago Mariño»; específicos: Diagnosticar las necesidades…, Definir la arquitectura…, Evaluar la factibilidad técnica, operativa y económica… El alcance llega hasta la demostración de factibilidad, sin piloto. Sede: Extensión Caracas.
 - **Orientaciones del docente:** el título no lleva verbos; el objetivo general es el título en infinitivo con un solo verbo; hay tres objetivos específicos (Diagnosticar, Diseñar, Evaluar); el problema se estudia en los niveles macro, meso y micro. El detalle está en `README.md`.
 - **Prioridad de normas:** Reglamento 2025, luego el Manual 5ª ed. (2015), luego las orientaciones del docente; ante una contradicción, se le pregunta al usuario.
 

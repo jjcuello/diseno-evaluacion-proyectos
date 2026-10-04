@@ -181,6 +181,28 @@ Hay señales típicas de referencias inventadas por una IA:
 
 ---
 
+## Bibliografía del curso
+
+### B1. Sapag Chain y Sapag Chain (2000), capítulo 1 ✅ leído en el original
+
+- **Referencia:** Sapag Chain, N. y Sapag Chain, R. (2000). *Preparación y evaluación de proyectos* (4ª ed.). Santiago de Chile: McGraw-Hill.
+- **Verificación:** el usuario aportó el escaneo del capítulo 1, pp. 1–12. La edición y el año se confirmaron en catálogos de bibliotecas (ISBN 956-278-088-0).
+- **Pasajes útiles:**
+
+| Página | Contenido | Dónde usarlo |
+|---|---|---|
+| 1 | "Un proyecto no es ni más ni menos que la búsqueda de una solución inteligente al planteamiento de un problema tendiente a resolver, entre tantas, una necesidad humana." | Capítulo I, justificación (ya citado) |
+| 2 | Al identificar el problema, "deberán, prioritariamente, buscarse todas las opciones que conduzcan al objetivo. Cada opción será un proyecto." | **Capítulo III: justifica la fase de alternativas de solución** |
+| 2 | La preinversión tiene dos etapas: la preparación (magnitud de las inversiones, los costos y los beneficios) y la evaluación (medición de la rentabilidad). | Capítulo I, alcance (ya citado); capítulo III |
+| 2 | Si el bien o servicio es rechazado por la comunidad, la asignación de recursos "adoleció de defectos de diagnóstico o de análisis". | Capítulo III: justifica el diagnóstico (objetivo específico 1) |
+| 4 | Define la evaluación de proyectos como el conjunto de antecedentes justificatorios que establecen las ventajas y desventajas de asignar recursos a una iniciativa. | Capítulo II, bases teóricas |
+| 7–8 | Evaluación social: compara los beneficios y costos para la comunidad en su conjunto; un proyecto no rentable en lo privado puede serlo en lo social; incluye efectos indirectos, intangibles y externalidades. | Capítulo I, justificación social (ya citado); capítulo IV, estudio económico |
+
+- **Advertencia:** la obra tiene 26 años y supera el límite de 10 años para las bases teóricas. Es defendible como obra clásica de la asignatura, pero en el capítulo II conviene complementarla con la 6ª edición (Sapag Chain, Sapag Chain y Sapag Puelma, 2014, McGraw-Hill, México, ISBN 978-607-15-1144-7) o con fuentes más recientes.
+- **Corrección:** el primer borrador del capítulo I le atribuía al capítulo 1 una clasificación de las viabilidades (técnica, de gestión, económica) que **no aparece en ese capítulo**. Se corrigió antes de entregarlo.
+
+---
+
 ## Reseña histórica (capítulo II, Proyecto Factible)
 
 Estas fuentes tienen más de 10 años, así que solo sirven para la reseña histórica, no para las bases teóricas.
