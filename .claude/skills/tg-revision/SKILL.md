@@ -23,13 +23,19 @@ Cada hallazgo debe indicar la sección, una cita breve del texto, la norma que i
 - [ ] Hay tres objetivos específicos, con un verbo cada uno (Diagnosticar, Diseñar, Evaluar), y cada uno tiene su fase en el marco metodológico.
 - [ ] La pregunta de investigación se responde con los objetivos.
 
-**Capítulo I**
+**Capítulo I** (Momento evaluativo 1 del instrumento `referencias/FOR-INVP-009.docx` y guía de la clase grupal)
 
-- [ ] El problema se estudia en los niveles macro, meso y micro, con datos citables y no con afirmaciones sueltas.
-- [ ] Están presentes las causas, las consecuencias, el pronóstico, la delimitación (espacial, temporal y temática) y la formulación.
-- [ ] La justificación cubre los aspectos teórico, práctico, metodológico, social y el alcance.
+- [ ] Solo lleva los títulos del Manual: Contextualización del Problema, Objetivos de la Investigación (con Objetivo General y Objetivos Específicos) y Justificación de la Investigación. No hay títulos para los niveles, las causas, las consecuencias, el pronóstico, la delimitación ni la formulación: van como prosa, enlazados con conectores.
+- [ ] El problema se estudia en los niveles macro, meso y micro, de lo general a lo particular, en presente, con datos citables y no con afirmaciones sueltas. Referencia de clase: unos cinco párrafos por nivel, de 10 a 13 líneas.
+- [ ] Contrasta la situación real con la deseada.
+- [ ] Hay citas textuales y, si hay datos, un cuadro con su fuente. Las fotos, solo si son reales.
+- [ ] Están presentes las causas, las consecuencias, el pronóstico, la delimitación (ámbito, tiempo y sujetos) y la formulación en interrogantes.
+- [ ] La línea de investigación (campo de trabajo) se menciona dentro del planteamiento.
+- [ ] Los objetivos están en estrecha coherencia con las interrogantes; el general refleja el título; los específicos permiten lograr el general y omiten el *dónde*.
+- [ ] La justificación destaca la relevancia científico-investigativa, contemporánea, económica, social y tecnológica (FOR-INVP-009), dice a quién beneficia el trabajo y qué aporta, y no repite las razones de la contextualización.
+- [ ] El título es el refinamiento del preliminar y está integrado al objetivo general.
 
-**Capítulo II**
+**Capítulo II** (Momento 2 del FOR-INVP-009: además pide reseña histórica, **cuatro antecedentes como mínimo, nacionales e internacionales**, bases legales en orden jerárquico y vigentes, y sistema de hipótesis o su justificación si no aplica)
 
 - [ ] Hay 3 antecedentes o más, de 5 años de antigüedad como máximo, del más reciente al más antiguo, y cada uno indica qué aporta.
 - [ ] Las bases teóricas tienen 10 años de antigüedad como máximo, están ligadas a las variables y no son una lista de citas.
@@ -37,7 +43,7 @@ Cada hallazgo debe indicar la sección, una cita breve del texto, la norma que i
 - [ ] Las variables tienen definición conceptual y operacional, y se operacionalizan en dimensiones e indicadores.
 - [ ] Los términos técnicos en otro idioma aparecen en "Definición de Términos Básicos".
 
-**Capítulo III**
+**Capítulo III** (Momento 3 del FOR-INVP-009: nivel, diseño, métodos, técnicas, procedimientos e instrumentos, población y muestra con su método de muestreo; el Momento 4 evalúa duración, cronograma y recursos humanos y financieros)
 
 - [ ] La modalidad, el diseño y el tipo de investigación están declarados y son coherentes entre sí; por ejemplo: proyecto factible, apoyado en un diseño de campo y documental, de nivel descriptivo.
 - [ ] Las fases corresponden a la modalidad. En un proyecto factible: diagnóstico, **alternativas de solución** y propuesta.

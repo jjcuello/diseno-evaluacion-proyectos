@@ -62,6 +62,9 @@ Origen: búsqueda con Gemini, revisada y verificada en la web el 2026-10-04.
   - La Dirección General de Cómputo y de Tecnologías de Información y Comunicación (DGTIC) opera una nube propia con tres servicios: Bóveda Digital, infraestructura como servicio (IaaS) y respaldo como servicio (BaaS).
   - Uno de sus fines declarados es la "reducción de costos por el uso de plataformas de empresas de tecnología".
   - Según la directora de la DGTIC, busca "disminuir la dependencia de servicios y plataformas contratados a las empresas transnacionales" (*Gaceta UNAM*).
+  - Citas textuales verificadas de nuevo el 2026-10-09:
+    - JLOM (2023): "Mediante la implementación de esta nube privada se logra una reducción de costos por el uso de plataformas de empresas de tecnología."
+    - Paz (2023): "Los estudiantes se benefician con la Nube UNAM cuando sus entidades académicas implementan plataformas".
 - **Corrección a Gemini:** el servicio **no está abierto a estudiantes**. Lo solicitan las "escuelas, facultades, centros e institutos de investigación, y dependencias", a través de su responsable de TIC. Además, es IaaS y no PaaS: el estudiante no puede desplegar su proyecto por sí mismo. Esto **refuerza la brecha** que atiende este proyecto: incluso una universidad grande de la región que tiene nube propia no ofrece despliegue de autoservicio a sus estudiantes.
 - **Uso:** capítulo I, nivel meso: las universidades latinoamericanas buscan reducir su dependencia de proveedores transnacionales.
 - 🟡 Otra fuente sugiere un dato de uso en 2022: 22 entidades atendidas y 474 instancias IaaS. Proviene de la *Memoria UNAM 2022, DGTIC* (https://www.planeacion.unam.mx/Memoria/2022/PDF/14.3-DGTIC.pdf). No se ha verificado en el documento.
@@ -169,6 +172,22 @@ Hay señales típicas de referencias inventadas por una IA:
 
 ---
 
+## Relevancia contemporánea (capítulo I, justificación)
+
+### C1. Encuesta anual de la CNCF sobre tecnologías nativas de la nube (2024) ✅
+
+- **Referencia:** Silverthorne, V. y Hendrick, S. (2025, marzo). *Cloud native 2024: Approaching a decade of code, cloud, and change* [Documento en línea]. The Linux Foundation y Cloud Native Computing Foundation. Disponible: https://www.cncf.io/reports/cncf-annual-survey-2024/ [Consulta: 2026, octubre 9].
+- **Verificación:** se leyó el PDF del informe el 2026-10-09. La encuesta se aplicó a 750 miembros de la comunidad nativa de la nube en el otoño de 2024.
+- **Datos verificados:**
+  - "91% of organizations are using containers in production (used for most or for a few apps) compared to just 80% in 2023" (p. 11 del PDF).
+  - La adopción de técnicas nativas de la nube llega a 89 por ciento.
+  - 29 por ciento de las organizaciones publica código varias veces al día, frente a 23 por ciento en 2023.
+  - El uso de integración y despliegue continuos (CI/CD) en producción creció 31 por ciento entre 2023 y 2024.
+- **Uso:** capítulo I, relevancia contemporánea: los contenedores y el despliegue continuo forman parte de la práctica profesional actual.
+- **Advertencia:** es una encuesta a la comunidad de la propia fundación, no a una muestra representativa de empresas. Conviene formular los datos como resultados de esa encuesta.
+
+---
+
 ## Bases teóricas (capítulo II)
 
 ### T1. Firecracker: virtualización ligera (microVM) ✅
@@ -269,6 +288,7 @@ El Manual exige **al menos tres**, de 2021 en adelante, ordenados del más recie
 
 - **Referencia:** Correa Cuvi, W. J. (2022). *Estudio de la plataforma Kubernetes para la administración automática de contenedores Docker en la facultad FICA de la Universidad Técnica del Norte*. Trabajo de grado de Ingeniería en Sistemas Computacionales, Universidad Técnica del Norte, Ibarra. Tutor: MSc. Xavier Mauricio Rea Peñafiel. Disponible: https://repositorio.utn.edu.ec/bitstream/123456789/12301/2/04%20ISC%20613%20TRABAJO%20GRADO.pdf [Consulta: 2026, octubre 4].
 - **Problema que plantea (casi idéntico al de este proyecto):** las carreras de Sistemas y de Software llevan a producción los proyectos web de sus materias, pero el servidor de virtualización de la facultad está saturado y "los estudiantes actualmente presentan restricciones al momento de acceder a la plataforma de virtualización debido a la creciente demanda".
+  - Cita verificada en el PDF original el 2026-10-09: sección 1.2, "Situación actual", **p. 20** del documento.
 - **Objetivos específicos:** (a) definir una base teórica sobre Docker y Kubernetes; (b) implementar Kubernetes con minikube para prácticas en entornos locales; (c) validar los resultados midiendo la satisfacción del usuario con el cuestionario CSUQ.
 - **Aporte:** respalda el problema desde otra universidad de la región. Además, su instrumento de validación, el CSUQ (*Computer System Usability Questionnaire*), es estandarizado y podría adoptarse en la encuesta de satisfacción posterior al piloto (objetivo específico 3).
 - **Diferencia que justifica este proyecto:** usa minikube, es decir, un solo nodo en un entorno local. Este proyecto propone un clúster de varios nodos en producción, con aislamiento por usuario y despliegue automático desde el repositorio.

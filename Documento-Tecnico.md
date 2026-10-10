@@ -22,7 +22,7 @@
 
 - **Objetivo general:** Diseñar una plataforma web institucional de alojamiento y despliegue continuo (PaaS) para el Politécnico Santiago Mariño.
 - **Objetivos específicos:**
-    1. Diagnosticar las necesidades de alojamiento y despliegue de proyectos académicos de los estudiantes y docentes del Politécnico Santiago Mariño.
+    1. Diagnosticar las necesidades de alojamiento y despliegue de proyectos académicos de los estudiantes y docentes.
     2. Definir la arquitectura de la plataforma web de alojamiento y despliegue continuo, con aislamiento por contenedores y límites de recursos.
     3. Evaluar la factibilidad técnica, operativa y económica de la plataforma.
 

@@ -114,6 +114,16 @@ def main():
         align = WD_ALIGN_PARAGRAPH.RIGHT if nombre == 'Portada Datos' else WD_ALIGN_PARAGRAPH.CENTER
         parrafo(s, align=align, indent=None, interlineado=1.0)
 
+    # Cuadros (Manual, cap. V): número y título arriba, en negrita y sin sangría; la nota va abajo, en 10 pt.
+    for nombre, antes in (('Cuadro Numero', 12), ('Cuadro Titulo', 0)):
+        s = estilo(doc, nombre)
+        fuente(s, bold=True)
+        parrafo(s, align=WD_ALIGN_PARAGRAPH.LEFT, indent=None, antes=antes, despues=6 if antes == 0 else 0,
+                interlineado=1.0, con_siguiente=True)
+    nota = estilo(doc, 'Nota de Cuadro')
+    fuente(nota, size=10)
+    parrafo(nota, align=WD_ALIGN_PARAGRAPH.LEFT, indent=None, antes=4, despues=12, interlineado=1.0)
+
     ref = estilo(doc, 'Referencia')
     fuente(ref)
     parrafo(ref, align=WD_ALIGN_PARAGRAPH.LEFT, indent=-SANGRIA, despues=6, interlineado=1.0)

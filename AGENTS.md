@@ -6,11 +6,12 @@ Este repositorio contiene el Trabajo de Grado de Ingeniería de Sistemas en el I
 
 | Archivo | Destinatario | Contenido |
 |---|---|---|
-| `Documento-Metodologico.md` | Tutor metodológico | Propuesta según el Manual y el Reglamento: capítulos I a III, cronograma y referencias |
+| `Documento-Metodologico.md` | Tutor metodológico | Propuesta según el Manual y el Reglamento: capítulos I a III, cronograma y referencias. Empieza en el capítulo I; la portada y el índice los agrega el script |
+| `Propuesta-Corta.md` | Tutor metodológico | Línea de investigación, modalidad y estructura. Nombre provisional: probablemente es el Protocolo de Investigación |
 | `Documento-Tecnico.md` | Tutor técnico | Arquitectura, seguridad, cronograma técnico, indicadores y factibilidad |
 | `README.md` | Ambos | Datos de la asignatura, orientaciones del docente y pendientes |
 
-Los PDF y la página HTML se generan con `generar_documentos.py`; no se editan a mano.
+Los PDF, el Word y la página HTML se generan con `generar_documentos.py`; no se editan a mano. El documento metodológico tiene una sola versión, `Documento-Metodologico.pdf` y `.docx`, con el formato del Manual.
 
 ## Skills: léelos antes de trabajar
 
@@ -31,6 +32,8 @@ Están en `.claude/skills/<nombre>/SKILL.md`. Claude Code los carga automáticam
 - **Modalidad (propuesta):** **Proyecto Factible**, apoyado en una investigación de campo y documental. La alternativa es Investigación Tecnológica. Está por confirmar con el tutor metodológico.
 - **Objetivos vigentes:** general «Diseñar una plataforma web institucional de alojamiento y despliegue continuo (PaaS) para el Politécnico Santiago Mariño»; específicos: Diagnosticar las necesidades…, Definir la arquitectura…, Evaluar la factibilidad técnica, operativa y económica… El alcance llega hasta la demostración de factibilidad, sin piloto. Sede: Extensión Caracas.
 - **Orientaciones del docente:** el título no lleva verbos; el objetivo general es el título en infinitivo con un solo verbo; hay tres objetivos específicos (Diagnosticar, Diseñar, Evaluar); el problema se estudia en los niveles macro, meso y micro. El detalle está en `README.md`.
+- **Foco actual:** solo el capítulo I del documento metodológico, hasta que lo evalúen y aprueben. El documento técnico se ajusta cuando lo lea el profesor.
+- **Instrumento de evaluación:** `referencias/FOR-INVP-009.docx`, con cuatro momentos evaluativos (problema, marco referencial, marco metodológico y aspectos administrativos). Úsalo como lista de control; el skill `tg-revision` resume sus criterios.
 - **Prioridad de normas:** Reglamento 2025, luego el Manual 5ª ed. (2015), luego las orientaciones del docente; ante una contradicción, se le pregunta al usuario.
 
 ## Registro de fuentes

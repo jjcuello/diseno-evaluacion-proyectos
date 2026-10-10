@@ -54,18 +54,13 @@ Es la propuesta de un modelo funcional viable que resuelve un problema práctico
 - **Título:** concreto, de **3 líneas como máximo**, centrado en el *qué* de la investigación y dispuesto en pirámide invertida en la portada. En este curso, además, no lleva verbos (ver README).
 - **Resumen:** **200 palabras como máximo** en la propuesta y 300 en el Trabajo de Grado, a espacio sencillo. Incluye la problemática, los objetivos, la metodología, la **línea de investigación** y los descriptores.
 - **Introducción:** temática, propósitos, relevancia y estructura del documento.
-- **Contextualización del problema:**
-  - Planteamiento y descripción de la necesidad.
+- **Contextualización del problema:** incluye los elementos siguientes, pero **sin subtítulos propios**. Se redactan como prosa continua, pasando de una idea a otra con conectores (Manual, cap. III, figuras 1 y 2; observación de la profesora al leer el borrador). Los únicos títulos del capítulo I son Contextualización del Problema, Objetivos de la Investigación (con Objetivo General y Objetivos Específicos en segundo nivel) y Justificación de la Investigación.
+  - Planteamiento y descripción de la necesidad, en los niveles macro, meso y micro (referencia de clase: unos cinco párrafos por nivel), con la situación real contrastada con la deseada.
   - **Causas, consecuencias y pronóstico.**
-  - **Delimitación** (espacial, temporal y temática).
+  - **Delimitación** (espacial, temporal y temática), con la línea de investigación.
   - **Formulación** del problema (pregunta de investigación).
 - **Objetivos:** en infinitivo, alcanzables y precisos, con un objetivo general y varios específicos. En este curso, uno solo general y tres específicos, cada uno con un único verbo.
-- **Justificación:**
-  - Aportes teóricos.
-  - Implicaciones prácticas.
-  - Aporte metodológico.
-  - Relevancia social.
-  - Alcance.
+- **Justificación:** a quién beneficia y qué aporta, sin repetir las razones de la contextualización. Relevancias que evalúa el FOR-INVP-009: científico-investigativa (incluye lo teórico y lo metodológico), contemporánea, económica, social y tecnológica. Cierra con el alcance.
 - **Antecedentes:** **3 como mínimo**, con **5 años de antigüedad como máximo**, ordenados del más reciente al más antiguo. Pueden ser trabajos de grado de pregrado o de maestría de instituciones reconocidas. No basta con reseñarlos: hay que decir qué aporta cada uno a este estudio (variables, metodología, estado del problema).
 - **Bases teóricas:** fuentes de **10 años de antigüedad como máximo**, vinculadas a las variables. No se trata de listar autores ni copiar citas.
 - **Bases legales:** leyes, reglamentos y normas que regulan la creación y la aplicación del producto. Omitirlas hace inviable un proyecto factible.
@@ -80,7 +75,7 @@ Es la propuesta de un modelo funcional viable que resuelve un problema práctico
 1. Página de título (Anexo C-1 o D-1).
 2. Constancias de aprobación: en la propuesta, del docente y del tutor (A-2, A-3); en el Trabajo de Grado, del tutor (B-1) y luego el acta de veredicto (B-4).
 3. Dedicatoria y agradecimientos (opcionales; solo en el Trabajo de Grado).
-4. Índice general.
+4. Índice general (anexo C-2): columna «Pp.», preliminares en mayúsculas, el rótulo CAPÍTULO y cada capítulo como «I. EL PROBLEMA» con sus secciones de primer nivel sin sangría. Lo que aún no se redacta lleva «x».
 5. Listas de cuadros, figuras, gráficos y ecuaciones (si existen).
 6. Resumen.
 
